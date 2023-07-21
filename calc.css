@@ -1,0 +1,60 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to right,rgb(255, 238, 0),rgb(255, 38, 0));
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.calc-flex{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 0.1rem;
+}
+
+.calc-flex > div {
+    display: flex;
+    gap: 0.1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.span-2 {
+    width: 50%;
+}
+button {
+    outline: none;
+    padding: 1.2rem 1rem;
+    width: 25%;
+    background:rgba(255, 72, 0, 0.24) ;
+}
+.calc-flex .result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.2rem;
+    background-color: rgb(179, 179, 235);
+    padding: 0.1rem 0.2rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 50px;
+}
+
+.prev-content,.current-content {
+    display: flex;
+    justify-content: flex-end;
+}
+span {
+    font-size: 12px;
+}
